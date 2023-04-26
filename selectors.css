@@ -6,16 +6,3 @@ body {
 	background-color: black;
 	color: aliceblue;
 }
-
-p:target {
-	border: 0.2rem solid royalblue;
-}
-
-a:hover {
-	color: cadetblue;
-}
-
-#first-paragraph::first-letter {
-	font-size: larger;
-	font-family: "Bruno Ace SC";
-}
