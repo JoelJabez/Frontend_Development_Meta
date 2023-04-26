@@ -1,0 +1,15 @@
+body {
+	background-color: black;
+	color: aliceblue;
+}
+
+h1 {
+	font-family: Dancing Script;
+	text-align: center;
+	color: #ff4040;
+}
+
+p {
+	font-size: 1.1rem;
+	font-weight: 550;
+}
