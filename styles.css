@@ -13,3 +13,15 @@ p {
 	font-size: 1.1rem;
 	font-weight: 550;
 }
+
+.btn {
+	border-radius: 0.3rem;
+	border-style: solid;
+	background-color: #0099ff;
+	color: black;
+	size: 0.5rem 1rem;
+}
+
+.btn-size {
+	font-size: 1.2rem;
+}
