@@ -1,0 +1,35 @@
+:root {
+	--dark-grey: #413f43;
+}
+
+body {
+	background-color: black;
+	color: aliceblue;
+}
+
+li:nth-child(even) {
+	color: #2200ff;
+}
+
+li:nth-child(odd) {
+	color: #8a2be2;
+}
+
+table,
+th,
+td {
+	border: solid #4444ff;
+	border-collapse: collapse;
+}
+
+.colored-border tr:nth-of-type(even) {
+	background-color: #413f43;
+}
+
+.colored-border tr:nth-of-type(odd) {
+	background-color: #635c5c;
+}
+
+.colored-border > thead > tr:first-of-type {
+	background-color: var(--dark-grey);
+}
