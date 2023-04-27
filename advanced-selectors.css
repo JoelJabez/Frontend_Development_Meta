@@ -1,33 +1,41 @@
+/* & Customs Properties */
 :root {
+	--black: #000;
+	--purple: #8a2be2;
+	--white: #f0f8ff;
+	--blue: #2200ff;
 	--dark-grey: #413f43;
+	--light-grey: #635c5c;
 }
 
+/* & HTML Tags */
 body {
-	background-color: black;
-	color: aliceblue;
+	background-color: var(--black);
+	color: var(--white);
 }
 
 li:nth-child(even) {
-	color: #2200ff;
+	color: var(--blue);
 }
 
 li:nth-child(odd) {
-	color: #8a2be2;
+	color: var(--purple);
 }
 
 table,
 th,
 td {
-	border: solid #4444ff;
+	border: solid var(--blue);
 	border-collapse: collapse;
 }
 
+/* & Classes */
 .colored-border tr:nth-of-type(even) {
-	background-color: #413f43;
+	background-color: var(--dark-grey);
 }
 
 .colored-border tr:nth-of-type(odd) {
-	background-color: #635c5c;
+	background-color: var(--light-grey);
 }
 
 .colored-border > thead > tr:first-of-type {
