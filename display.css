@@ -1,0 +1,27 @@
+:root {
+	--black-color: #000;
+	--white-color: aliceblue;
+	--green-color: palegreen;
+	--pink-color: palevioletred;
+}
+
+html {
+	background-color: var(--black-color);
+	color: var(--white-color);
+	font-size: 1.3rem;
+}
+
+p {
+	outline-color: var(--pink-color);
+	outline-style: solid;
+	outline-width: 0.25rem;
+	border-radius: 0.4rem;
+}
+
+a {
+	outline-color: aquamarine;
+	outline-width: 0.1rem;
+	outline-style: solid;
+	text-decoration-color: var(--green-color);
+	color: var(--green-color);
+}
