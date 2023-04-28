@@ -14,7 +14,7 @@ html {
 p {
 	outline-color: var(--pink-color);
 	outline-style: solid;
-	outline-width: 0.25rem;
+	outline-width: 0.18rem;
 	border-radius: 0.4rem;
 }
 
@@ -22,6 +22,7 @@ a {
 	outline-color: aquamarine;
 	outline-width: 0.1rem;
 	outline-style: solid;
+	border-radius: 0.4rem;
 	text-decoration-color: var(--green-color);
 	color: var(--green-color);
 }
