@@ -11,8 +11,7 @@ h1 {
 }
 
 p {
-	padding: 4px;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	font-weight: 550;
 }
 
@@ -26,4 +25,12 @@ p {
 
 .btn-size {
 	font-size: 32px;
+}
+
+#first-paragraph {
+	padding-left: 1.5em;
+}
+
+#second-paragraph {
+	padding-left: 31.2px;
 }
