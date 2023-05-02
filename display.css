@@ -3,6 +3,7 @@
 	--white-color: aliceblue;
 	--green-color: palegreen;
 	--pink-color: palevioletred;
+	--aquamarine-color: aquamarine;
 }
 
 html {
@@ -19,7 +20,7 @@ p {
 }
 
 a {
-	outline-color: aquamarine;
+	outline-color: var(--aquamarine-color);
 	outline-width: 0.1rem;
 	outline-style: solid;
 	border-radius: 0.4rem;
