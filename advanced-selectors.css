@@ -1,6 +1,11 @@
+:root {
+	--black-color: #000;
+	--white-color: #f0f8ff;
+}
+
 body {
-	background-color: #000;
-	color: #f0f8ff;
+	background-color: var(--black-color);
+	color: var(--white-color);
 }
 
 table,
@@ -8,4 +13,16 @@ th,
 td {
 	border: solid #2200ff;
 	border-collapse: collapse;
+}
+
+li {
+	color: #ff9b05;
+}
+
+li:first-child {
+	color: #00ff00;
+}
+
+tr:nth-child(2n) td {
+	color: #ff0000;
 }
