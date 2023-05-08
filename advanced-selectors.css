@@ -3,6 +3,10 @@
 	--white-color: #f0f8ff;
 }
 
+:other {
+	--black-color: #fff;
+}
+
 body {
 	background-color: var(--black-color);
 	color: var(--white-color);
@@ -11,18 +15,22 @@ body {
 table,
 th,
 td {
-	border: solid #2200ff;
+	border: solid #3202ff;
 	border-collapse: collapse;
 }
 
 li {
-	color: #ff9b05;
+	color: rgb(255, 155, 5);
 }
 
-li:first-child {
-	color: #00ff00;
+li:nth-child(1) {
+	color: chartreuse;
 }
 
-tr:nth-child(2n) td {
-	color: #ff0000;
+th {
+	background: black;
+}
+
+tr:nth-child(even) td {
+	color: red;
 }

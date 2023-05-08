@@ -17,6 +17,8 @@ p {
 	outline-style: solid;
 	outline-width: 0.18rem;
 	border-radius: 0.4rem;
+	margin: 1rem;
+	padding: 1rem;
 }
 
 a {
@@ -26,4 +28,13 @@ a {
 	border-radius: 0.4rem;
 	text-decoration-color: var(--green-color);
 	color: var(--green-color);
+	margin-top: 1rem;
+}
+
+.btn {
+	display: inline-block;
+	border-color: aquamarine;
+	border-style: solid;
+	color: white;
+	padding: 0.5rem;
 }
