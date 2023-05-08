@@ -1,14 +1,12 @@
+@import url("background.css");
+
 :root {
-	--black-color: #000;
-	--white-color: aliceblue;
 	--green-color: palegreen;
 	--pink-color: palevioletred;
 	--aquamarine-color: aquamarine;
 }
 
-html {
-	background-color: var(--black-color);
-	color: var(--white-color);
+body {
 	font-size: 1.3rem;
 }
 

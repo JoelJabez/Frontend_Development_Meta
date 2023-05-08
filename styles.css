@@ -1,7 +1,4 @@
-body {
-	background-color: black;
-	color: aliceblue;
-}
+@import url("background.css");
 
 h1 {
 	font-family: Dancing Script;

@@ -1,10 +1,7 @@
+@import url("background.css");
+
 html {
 	scroll-behavior: smooth;
-}
-
-body {
-	background-color: black;
-	color: aliceblue;
 }
 
 p:target {

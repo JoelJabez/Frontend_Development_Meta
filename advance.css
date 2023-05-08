@@ -1,9 +1,21 @@
-:root {
-	--black-color: black;
-	--white-color: white;
+@import url("background.css");
+
+.col {
+	border-color: blue;
+	border-width: 0.2rem;
+	border-style: solid;
 }
 
-body {
-	background-color: var(--black-color);
-	color: var(--white-color);
+dl {
+	margin-bottom: 0;
+}
+
+.col + .col {
+	margin-left: 1rem;
+}
+
+tr,
+td,
+th {
+	border: aquamarine solid 0.1rem;
 }

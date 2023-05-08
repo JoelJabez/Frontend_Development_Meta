@@ -1,7 +1,4 @@
-body {
-	background-color: black;
-	color: white;
-}
+@import url("background.css");
 
 label {
 	display: block;
