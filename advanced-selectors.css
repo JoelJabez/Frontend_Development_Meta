@@ -1,24 +1,32 @@
 @import url("background.css");
 
+:root {
+	--blue-color: #3202ff;
+	--orange-color: #ff9b05;
+	--green-color: #7fff00;
+	--black-color: #000;
+	--red-color: #f00;
+}
+
 table,
 th,
 td {
-	border: solid #3202ff;
+	border: solid var(--blue-color);
 	border-collapse: collapse;
 }
 
 li {
-	color: rgb(255, 155, 5);
+	color: var(--orange-color);
 }
 
 li:nth-child(1) {
-	color: chartreuse;
+	color: var(--green-color);
 }
 
 th {
-	background: black;
+	background: var(--black-color);
 }
 
 tr:nth-child(even) td {
-	color: red;
+	color: var(--red-color);
 }
