@@ -14,10 +14,21 @@
 	margin-left: auto;
 }
 
+.custom-color[type="text"],
 .custom-color:focus[type="text"] {
-	color: var(--bs-purple);
+	color: var(--bs-indigo);
 }
 
-.custom-color[type="text"] {
-	color: var(--bs-purple);
+.custom-color[type="email"],
+.custom-color:focus[type="email"] {
+	color: var(--bs-green);
+}
+
+.custom-color[type="password"],
+.custom-color:focus[type="password"] {
+	color: var(--bs-red);
+}
+
+.form-text {
+	color: #dfdfdf;
 }
