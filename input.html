@@ -7,11 +7,155 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
-	<body class="center">
-		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" autocomplete="off" />
+	<body class="text-center">
+		<form>
+			<!-- & Getting username from the user -->
+			<div class="mb-auto align-item-center">
+				<label for="username" class="form-label fs-4 fw-bold m-0"
+					>Username:</label
+				>
+				<input
+					type="text"
+					name="username"
+					id="username"
+					class="form-control w-auto p-1 custom-color custom-center-input"
+					autocomplete="off"
+					required
+					minlength="3"
+				/>
+			</div>
 
-		<label for="password">Password:</label>
-		<input type="password" name="password" id="password" />
+			<!-- & Getting email from the user -->
+			<div class="mb-auto pt-3">
+				<label for="email" class="form-label fs-4 fw-bold m-0"
+					>Email:</label
+				>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					class="form-control w-auto p-1 custom-center-input custom-color"
+					autocomplete="off"
+					minlength="15"
+					pattern="[a-z]{5,}+@[a-z]{5,}+\.com"
+					required
+					placeholder="example@gmail.com"
+				/>
+			</div>
+
+			<!-- & Getting password from the user -->
+			<div class="mb-auto pt-3">
+				<label for="password" class="form-label fs-4 fw-bold m-0"
+					>Password:</label
+				>
+				<input
+					type="password"
+					name="password"
+					id="password"
+					class="form-control w-auto p-1 center-block custom-center-input custom-color"
+					autocomplete="off"
+					required
+				/>
+			</div>
+
+			<!-- & Getting their gender from the user -->
+			<div class="mb-auto pt-3 align-item-center">
+				<p class="fs-4 fw-bold mb-0">Gender:</p>
+
+				<input
+					type="radio"
+					name="gender"
+					id="male"
+					class="form-check-input"
+					required
+				/>
+				<label for="male" class="fs-5 fw-medium form-check-label"
+					>Male</label
+				>
+
+				<br />
+
+				<input
+					type="radio"
+					name="gender"
+					id="female"
+					class="form-check-input"
+					required
+				/>
+				<label for="female" class="fs-5 fw-medium form-check-label"
+					>Female</label
+				>
+			</div>
+
+			<!-- & Getting what type of chargers the user has -->
+			<div class="mb-auto pt-3 form-check form-check-inline">
+				<p class="fs-4 fw-bold mb-0">
+					What type of charging cable you have:
+				</p>
+
+				<input type="checkbox" name="charger" id="usb-c" />
+				<label for="usb-c" class="fs-5 fw-medium">USB C</label>
+
+				<br />
+
+				<input type="checkbox" name="charger" id="micro-usb" />
+				<label for="micro-usb" class="fs-5 fw-medium">Micro USB</label>
+
+				<br />
+
+				<input type="checkbox" name="charger" id="lighting" />
+				<label for="lighting" class="fs-5 fw-medium">Lighting</label>
+			</div>
+
+			<!-- & Getting the user's birthday -->
+			<div class="mb-auto pt-3">
+				<label for="birthday" class="form-label fs-4 fw-bold m-0"
+					>Birthday:</label
+				>
+				<input
+					type="date"
+					name="birthday"
+					id="birthday"
+					class="form-control w-auto p-1 custom-center-input custom-color"
+					required
+				/>
+			</div>
+
+			<!-- & Getting the user's favourite color -->
+			<div class="mb-auto pt-3">
+				<label for="color" class="form-label fs-4 fw-bold m-0"
+					>Favorite color:</label
+				>
+				<input
+					type="color"
+					name="color"
+					id="color"
+					class="form-control form-control-color custom-center-input custom-color"
+					value="#fd7e14"
+					required
+				/>
+			</div>
+
+			<!-- & Getting a file from the user -->
+			<div class="mb-auto pt-3">
+				<label for="file" class="form-label fs-4 fw-bold">File:</label>
+				<input
+					type="file"
+					class="form-control w-auto p-1 custom-center-input custom-color"
+					id="file"
+					name="file"
+					required
+				/>
+			</div>
+
+			<!-- & Submit button -->
+			<div class="mb-auto pt-3">
+				<input
+					type="submit"
+					class="form-control w-auto p-1 btn btn-primary px-2 mt-3 custom-center-input"
+					value="Submit"
+				/>
+			</div>
+		</form>
 	</body>
 </html>
