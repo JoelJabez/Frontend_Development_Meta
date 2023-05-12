@@ -1,0 +1,21 @@
+@import url("../../background.css");
+
+body {
+	border: 0.2rem violet solid;
+	padding: 0.07rem;
+}
+
+div > div {
+	border: 0.2rem cadetblue solid;
+	background-color: rgba(95, 158, 160, 0.846);
+	color: black;
+	border-radius: 0.3rem;
+	/* min-width: 2rem; */
+}
+
+body > div {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+}
