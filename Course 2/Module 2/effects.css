@@ -1,0 +1,46 @@
+@import url("../../background.css");
+
+body {
+	justify-content: center;
+	display: flex;
+}
+
+div {
+	--size: 10rem;
+	width: var(--size);
+	height: var(--size);
+
+	border: 0.3rem solid #f00;
+	background-color: rgba(255, 000, 000, 0.59);
+	margin: 30rem;
+
+	animation: color-change 3s infinite;
+}
+
+/* div:hover {
+	border-color: aqua;
+	background-color: rgba(0, 255, 255, 0.59);
+	transform: rotate(90deg);
+} */
+
+@keyframes color-change {
+	0% {
+		border-color: #f00;
+		background-color: rgba(255, 0, 0, 0.59);
+	}
+
+	50% {
+		border-color: #0f0;
+		background-color: rgba(0, 255, 0, 0.59);
+	}
+
+	75% {
+		border-color: #00f;
+		background-color: rgba(0, 0, 255, 0.59);
+	}
+
+	100% {
+		border-color: #f00;
+		background-color: rgba(255, 0, 00, 0.59);
+	}
+}
