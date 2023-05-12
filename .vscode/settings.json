@@ -1,0 +1,9 @@
+{
+	"editor.fontSize": 14,
+	"editor.fontFamily": "'Cascadia Code'",
+	"liveServer.settings.port": 5508,
+	"liveServer.settings.multiRootWorkspaceName": "Frontend_Development_Meta",
+	"css.format.spaceAroundSelectorSeparator": true,
+	"css.format.enable": false,
+	"stylelint.configFile": ".stylelintrc.json"
+}
