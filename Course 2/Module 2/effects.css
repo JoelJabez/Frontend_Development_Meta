@@ -11,36 +11,38 @@ div {
 	height: var(--size);
 
 	border: 0.3rem solid #f00;
-	background-color: rgba(255, 000, 000, 0.59);
+	background-color: rgba(255, 0, 0, 0.59);
 	margin: 30rem;
 
-	animation: color-change 3s infinite;
+	/* transform: rotate(90deg); */
+	/* transition: 10s;  */
+	/* animation-direction: alternate; */
 }
 
-/* div:hover {
-	border-color: aqua;
-	background-color: rgba(0, 255, 255, 0.59);
-	transform: rotate(90deg);
-} */
+div:hover {
+	animation: color-change 3s linear;
+	animation-iteration-count: 2;
+}
 
 @keyframes color-change {
-	0% {
+	0%,
+	100% {
 		border-color: #f00;
 		background-color: rgba(255, 0, 0, 0.59);
 	}
 
-	50% {
+	25% {
 		border-color: #0f0;
 		background-color: rgba(0, 255, 0, 0.59);
 	}
 
-	75% {
+	50% {
 		border-color: #00f;
 		background-color: rgba(0, 0, 255, 0.59);
 	}
 
-	100% {
-		border-color: #f00;
-		background-color: rgba(255, 0, 00, 0.59);
+	75% {
+		border-color: #f0f;
+		background-color: rgba(255, 0, 255, 0.59);
 	}
 }
