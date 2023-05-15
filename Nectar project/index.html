@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+		<title>Nectar - Users</title>
+	</head>
+	<body>
+		<div type="top">
+			<div type="top-left">
+				<img
+					src="/Nectar project/Project_mockup_pictures/Screenshot from 2023-05-15 11-42-33.png"
+					alt="Mcruncher logo"
+				/>
+				<span>Nectar</span>
+			</div>
+
+			<div type="top-right">
+				<a href="#"><i class="bi bi-question-circle-fill"></i></a>
+				<a href="#"><i class="bi bi-gear-fill"></i></a>
+				<a><i class="bi bi-person-fill"></i></a>
+			</div>
+		</div>
+
+		<div type="navbar">Navbar</div>
+
+		<div type="main">
+			<h2>Users</h2>
+
+			<div class="dropdown">
+				<button
+					class="btn btn-primary dropdown-toggle"
+					type="button"
+					data-bs-toggle="dropdown"
+					aria-expanded="false"
+				>
+					Create
+				</button>
+
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">INTERNAL user</a></li>
+					<li>
+						<a class="dropdown-item" href="#">LDAP</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-floating mb-auto mt-3 h-25">
+				<input
+					type="text"
+					class="form-control h-25"
+					id="floatingInput"
+					placeholder="user"
+				/>
+				<label for="floatingInput">User</label>
+			</div>
+		</div>
+	</body>
+</html>
