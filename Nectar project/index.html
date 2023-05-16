@@ -13,24 +13,186 @@
 		<title>Nectar - Users</title>
 	</head>
 	<body>
-		<div type="top">
-			<div type="top-left">
-				<img
-					src="/Nectar project/Project_mockup_pictures/Screenshot from 2023-05-15 11-42-33.png"
-					alt="Mcruncher logo"
-				/>
-				<span>Nectar</span>
+		<!-- & Offcanvas navbar -->
+		<nav class="navbar fixed-top">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div>
+					<span type="first-letter">Nectar</span>
+				</div>
+				<div type="top-right">
+					<a href="#"><i class="bi bi-question-circle-fill"></i></a>
+					<a href="#"><i class="bi bi-gear-fill"></i></a>
+					<a><i class="bi bi-person-fill"></i></a>
+				</div>
+
+				<div
+					class="offcanvas offcanvas-start"
+					type="custom-font"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<img
+							src="/Nectar project/Project_mockup_pictures/Screenshot from 2023-05-15 11-42-33.png"
+							alt="Mcruncher logo"
+						/>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul
+							class="navbar-nav justify-content-end flex-grow-1 pe-3"
+						>
+							<li class="nav-item">
+								<a
+									href="#"
+									class="nav-link dropdown-toggle"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>Dashboards</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" class="dropdown-item"
+											>System Dashboard</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#">Analytics</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#">Diagnostics</a>
+							</li>
+
+							<li class="nav-item">
+								<a
+									href="#"
+									class="nav-link dropdown-toggle"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>Security</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" class="dropdown-item"
+											>Windows User Manager</a
+										>
+									</li>
+
+									<li>
+										<a href="#" class="dropdown-item"
+											>USB Manager</a
+										>
+									</li>
+
+									<li>
+										<a href="#" class="dropdown-item"
+											>App Whitelist Monitor</a
+										>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Software
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#"
+											>EJ Hive</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Live EJ</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>EJ Report</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>File collections</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Job requests</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Jobs</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Pulled files</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Software updates</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>File explorer</a
+										>
+									</li>
+
+									<li>
+										<a class="dropdown-item" href="#"
+											>Media file sync</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
+		</nav>
 
-			<div type="top-right">
-				<a href="#"><i class="bi bi-question-circle-fill"></i></a>
-				<a href="#"><i class="bi bi-gear-fill"></i></a>
-				<a><i class="bi bi-person-fill"></i></a>
-			</div>
-		</div>
-
-		<div type="navbar">Navbar</div>
-
+		<!-- & Main page -->
 		<div type="main">
 			<h2>Users</h2>
 
@@ -59,7 +221,54 @@
 					id="floatingInput"
 					placeholder="user"
 				/>
-				<label for="floatingInput">User</label>
+				<label for="floatingInput">Username</label>
+			</div>
+
+			<div class="table-responsive mt-3">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Username</th>
+							<th>First name</th>
+							<th>Last name</th>
+							<th>Email</th>
+							<th>Role</th>
+							<th>Status</th>
+							<th>Currently logged in?</th>
+							<th>Login Date</th>
+							<th>Auth Provider</th>
+							<th>Login Failure Reason</th>
+						</tr>
+					</thead>
+
+					<tbody class="table-group-divider">
+						<tr>
+							<td>a</td>
+							<td>b</td>
+							<td>c</td>
+							<td>d</td>
+							<td>e</td>
+							<td>f</td>
+							<td>g</td>
+							<td>h</td>
+							<td>i</td>
+							<td>j</td>
+						</tr>
+
+						<tr>
+							<td>a</td>
+							<td>b</td>
+							<td>c</td>
+							<td>d</td>
+							<td>e</td>
+							<td>f</td>
+							<td>g</td>
+							<td>h</td>
+							<td>i</td>
+							<td>j</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</body>
