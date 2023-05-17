@@ -5,9 +5,10 @@
 /* & Goggle Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 :root {
-	--color: #1f679d;
+	--color: rgb(31, 103, 157);
 }
 
 *,
@@ -42,11 +43,19 @@ img[alt="mcruncher logo" i] {
 	height: 3.1rem;
 }
 
+[type="main"] {
+	--padding: 2.2rem;
+
+	padding-left: var(--padding);
+	padding-top: var(--padding);
+	margin-top: 2.8rem;
+}
+
 /* --> Class Selectors */
 .bi {
 	padding: 0.3rem 1.2rem;
 	font-size: 1.3rem;
-	color: var(--color);
+	/* color: var(--color); */
 }
 
 .bi:hover {

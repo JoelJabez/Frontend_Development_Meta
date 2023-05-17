@@ -1,0 +1,38 @@
+@import url("style.css");
+
+.custom-box {
+	border: 0.1rem solid #dcdcdc;
+	border-radius: 1.2rem;
+
+	padding: 1.5rem 2rem 3rem 4rem;
+	margin-right: 2rem;
+
+	background-color: #dcdcdc;
+}
+
+.btn-primary {
+	--hover-state-color: rgba(31, 102, 157, 0.9);
+
+	background-color: var(--hover-state-color);
+	border-color: var(--hover-state-color);
+}
+
+.btn-primary:hover {
+	background-color: rgb(31, 102, 157);
+	border-color: rgb(31, 102, 157);
+}
+
+.btn-primary:active {
+	background-color: rgb(31, 102, 157);
+	border-color: rgb(31, 102, 157);
+}
+
+[type="required"] {
+	color: #d20000;
+	font-size: 1.1rem;
+}
+
+label {
+	font-family: "Roboto Slab";
+	font-weight: 500;
+}
