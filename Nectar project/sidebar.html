@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="sidebar.css" />
+		<script src="https://unpkg.com/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/e97dd131fe.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<main>
+		<div class="layout has-sidebar fixed-sidebar fixed-header">
+			<aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+				<a id="btn-collapse" class="sidebar-collapser"
+					><i class="ri-arrow-left-s-line"></i
+				></a>
+				<div class="sidebar-layout">
+					<div class="sidebar-header">
+						<div class="pro-sidebar-logo">
+							<div>N</div>
+							<h5>Nectar</h5>
+						</div>
+					</div>
+					<div class="sidebar-content">
+						<nav class="menu open-current-submenu">
+							<ul>
+								<li class="menu-header">
+									<span> GENERAL </span>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i class="fa-solid fa-gauge"></i>
+										</span>
+										<span class="menu-title"
+											>Dashboards</span
+										>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>System dashboard</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-chart-line"
+											></i>
+										</span>
+										<span class="menu-title"
+											>Analytics</span
+										>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-magnifying-glass-dollar"
+											></i>
+										</span>
+										<span class="menu-title">Asset</span>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-magnifying-glass-chart"
+											></i>
+										</span>
+										<span class="menu-title"
+											>Diagnostics</span
+										>
+									</a>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-boxes-stacked"
+											></i>
+										</span>
+										<span class="menu-title"
+											>Inventory</span
+										>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Software
+														Inventory</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Hardware
+														Inventory</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-circle-exclamation"
+											></i>
+										</span>
+										<span class="menu-title">Issues</span>
+									</a>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-shield-halved"
+											></i>
+										</span>
+										<span class="menu-title">Security</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Windows User
+														Manager</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>USB Manager</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i class="fa-solid fa-gears"></i>
+										</span>
+										<span class="menu-title">Software</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>EJ Hive</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Live EJ</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>EJ Report</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>File collections</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Job requests</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Jobs</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Pulled files</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Streamed files</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Software updates</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>File explorer</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Media file sync</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li
+									class="menu-header"
+									style="margin-top: 486.5px"
+								>
+									<span> EXTRA </span>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i class="fa-solid fa-bug"></i>
+										</span>
+										<span class="menu-title">Reports</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Asset</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Audit</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>BIOS</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Inventory</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Issues</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>OCBC</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Software</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Software Updates</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Terminal
+														Management</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>USB Manager</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>User Management</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Windows Patch
+														Manager</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Windows User
+														Manager</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i
+												class="fa-solid fa-circle-question"
+											></i>
+										</span>
+										<span class="menu-title">Help</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Keyboard Shortcut</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i class="fa-solid fa-gear"></i>
+										</span>
+										<span class="menu-title">Settings</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<h5 class="mb-0">
+													Administration
+												</h5>
+												<a href="#">
+													<span class="menu-title"
+														>Module settings</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Terminal
+														Management</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<h5 class="mb-0">
+													User Management
+												</h5>
+												<a href="#">
+													<span class="menu-title"
+														>Roles</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>Users</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">
+													<span class="menu-title"
+														>User group</span
+													>
+												</a>
+											</li>
+											<li class="menu-item">
+												<a href="#" class="fs-5">
+													<span class="menu-title"
+														>System</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item sub-menu">
+									<a href="#">
+										<span class="menu-icon">
+											<i class="fa-solid fa-user"></i>
+										</span>
+										<span class="menu-title">Profile</span>
+									</a>
+									<div class="sub-menu-list">
+										<ul>
+											<li class="menu-item">
+												<h5 class="mb-0">Joel Jabez</h5>
+											</li>
+
+											<li class="menu-item">
+												<a href="#" class="fs-5">
+													<span class="menu-title"
+														>Change password</span
+													>
+												</a>
+											</li>
+
+											<li class="menu-item">
+												<a href="#" class="fs-5">
+													<span class="menu-title"
+														>Profile</span
+													>
+												</a>
+											</li>
+
+											<li class="menu-item">
+												<a href="#" class="fs-5">
+													<span class="menu-title"
+														>Logout</span
+													>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</aside>
+			<div id="overlay" class="overlay"></div>
+			<div class="layout">
+				<main class="content">
+					<div>
+						<a
+							id="btn-toggle"
+							href="#"
+							class="sidebar-toggler break-point-sm"
+						>
+							<i class="ri-menu-line ri-xl"></i>
+						</a>
+						<h1 style="margin-bottom: 0">Nectar</h1>
+					</div>
+				</main>
+				<div class="overlay"></div>
+			</div>
+		</div>
+		<script src="sidebar.js"></script>
+	</main>
+</html>
